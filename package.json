@@ -1,0 +1,22 @@
+{
+  "name": "demo",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "electron .",
+    "package": "rimraf pkg && electron-packager . --arch=x64 --platform=win32,darwin,linux --out=pkg --asar",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "electron": "^1.4.3",
+    "electron-packager": "^8.1.0",
+    "eslint": "^3.8.1",
+    "rimraf": "^2.5.4"
+  },
+  "dependencies": {
+    "immutable": "^3.8.1",
+    "react": "^15.3.1",
+    "react-three-renderer": "^2.3.2",
+    "rxjs": "^5.0.0-rc.1",
+    "three": "^0.79.0"
+  }
+}
